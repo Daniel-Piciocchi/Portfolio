@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Nexa Regular';
+    src: url('./fonts/NexaRegular.otf');
+}
+
+html {
+    height: 100%;
+    background: #f4f3f0;
+}
+
+body {
+    height: 100%;
+    background: #f4f3f0;
+}
+
+.container {
+    background: #f0ebe3;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 100%;
+}
+
+.navigationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+
+.logo {
+    padding-top: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.menuLinks {
+}
+
+.bodyContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.quoteContainer {
+    border-bottom-style: inset;
+    border-top-style: outset;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-family: 'Nexa Regular';
+    color: grey;
+}
+
+a {
+    font-family: 'Nexa Regular';
+    color: #e26868;
+    font-size: 16px;
+    transition: transform 0.2s;
+    display: inline-block;
+    margin-left: 4px;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+.logo:hover {
+    transform: scale(1.5);
+}
+
+.socialMediaLogos:hover {
+    transform: scale(1.5);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.socialMediaLogos {
+    margin-left: 12px;
+    margin-right: 12px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.profilePic {
+    border-radius: 50%;
+}
+
