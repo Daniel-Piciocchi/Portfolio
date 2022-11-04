@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Nexa Regular';
     src: url('./fonts/NexaRegular.otf');
@@ -5,12 +6,14 @@
 
 html {
     height: 100%;
-    background: #f4f3f0;
+    background:rgb(30,30,40);
+    /* background-image: url("../images/background-image.jpg");
+    background-size:cover; */
 }
 
 body {
     height: 100%;
-    background: #f4f3f0;
+    background:rgb(30,30,40)
 }
 
 .container {
@@ -27,8 +30,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
     height: 50px;
+    position: fixed;
+    top: 0;
+    width: 65%;
+    margin-top: 1%;
+    
   }
 
 .logo {
@@ -37,28 +45,12 @@ body {
     cursor: pointer;
 }
 
-.menuLinks {
-}
-
-.bodyContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- }
-
-.quoteContainer {
-    border-bottom-style: inset;
-    border-top-style: outset;
-    margin-top: 64px;
-    margin-bottom: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 p {
     font-family: 'Nexa Regular';
     color: grey;
+    text-align: center;
+    
 }
 
 a {
@@ -69,19 +61,22 @@ a {
     display: inline-block;
     margin-left: 4px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
     transform: scale(1.2);
     text-decoration: underline;
+    color: black;
+    
 }
 
 .logo:hover {
-    transform: scale(1.5);
+    transform: scale(1.);
 }
 
 .socialMediaLogos:hover {
-    transform: scale(1.5);
+    transform: scale(1.);
 }
 
 footer {
@@ -95,10 +90,25 @@ footer {
     margin-left: 12px;
     margin-right: 12px;
     transition: 0.2s;
-    cursor: pointer;
+    cursor:pointer;
+    width: 50px;
+    height: 50px;
 }
 
-.profilePic {
-    border-radius: 50%;
+h1 {
+    color: #e26868;
 }
+
+h2 {
+    color: #e26868;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color:rgb(30,30,40) */
+    text-align: center;
+  }
 

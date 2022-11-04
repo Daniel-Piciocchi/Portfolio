@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+#about {
+    text-decoration: underline;
+
+}
+
+p {
+    margin: 2%;
+    word-spacing: 2%;
+}

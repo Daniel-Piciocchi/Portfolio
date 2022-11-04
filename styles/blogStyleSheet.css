@@ -1,0 +1,32 @@
+#blog {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h4 {
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+h4:hover {
+    transform: scale(1);
+    text-decoration: underline;
+    color: #e26868;
+}
+
+.blogIMG {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 20px;
+    /* border: 5px solid rgb(30,30,40); */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
