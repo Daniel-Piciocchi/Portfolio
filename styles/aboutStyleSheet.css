@@ -1,14 +1,15 @@
 h1 {
     text-align: center;
     text-decoration-line: underline;
+    color: #d95656;
 }
 
-#about {
-    text-decoration: underline;
+.about {
+    text-decoration: overline;
+    color: #d95656;
 
 }
 
-p {
-    margin: 2%;
-    word-spacing: 2%;
+.container {
+    height: 100%;
 }

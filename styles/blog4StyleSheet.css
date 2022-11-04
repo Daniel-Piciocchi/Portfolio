@@ -1,30 +1,31 @@
-#blog {
+/* #blog {
     text-decoration: underline;
-}
-
-h2 {
-    text-align: center;
-    display: inline-block;
-    margin: 20px;
-    text-decoration: underline;
-    /* cursor: pointer; */
-}
-
-/* h4:hover {
-    transform: scale(1.2);
-    text-decoration: underline;
-    color: #e26868;
 } */
 
-.blogIMG {
-    width: 200px;
-    height: 200px;
-    margin: 30px;
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline;    
+}
+
+#imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog3IMG {
     border-radius: 20px;
-    /* border: 5px solid #27277f; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  
-   
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container {
+    height: 100%;
 }

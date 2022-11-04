@@ -1,29 +1,31 @@
-
 @font-face {
-    font-family: 'Nexa Regular';
-    src: url('./fonts/NexaRegular.otf');
+    /* font-family: 'Nexa Regular';
+    src: url('./fonts/NexaRegular.otf'); */
+    font-family: 'Fire Code-Light';
+    src: url('../fonts/FiraCode-Light.ttf');
 }
 
 html {
     height: 100%;
-    background:rgb(30,30,40);
+    background: rgb(30, 30, 40);
     /* background-image: url("../images/background-image.jpg");
     background-size:cover; */
+    /* font-family: "Lucida Console", "Courier New", monospace; */
 }
 
 body {
-    height: 100%;
-    background:rgb(30,30,40)
+    min-height: 100%;
+    background: rgb(30, 30, 40);
 }
 
 .container {
-    background: #f0ebe3;
+    background: #ece5da;
     margin-left: 15%;
     margin-right: 15%;
     padding-top: 32px;
     padding-left: 16px;
     padding-right: 16px;
-    height: 100%;
+    height: 100vh;
 }
 
 .navigationContainer {
@@ -36,26 +38,23 @@ body {
     top: 0;
     width: 65%;
     margin-top: 1%;
-    
-  }
+}
 
 .logo {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     transition: 0.2s;
     cursor: pointer;
 }
 
-
 p {
-    font-family: 'Nexa Regular';
+    font-family: 'Fire Code-Light';
     color: grey;
     text-align: center;
-    
 }
 
 a {
-    font-family: 'Nexa Regular';
-    color: #e26868;
+    font-family: 'Fire Code-Light';
+    color: #07bebe;
     font-size: 16px;
     transition: transform 0.2s;
     display: inline-block;
@@ -66,41 +65,37 @@ a {
 
 a:hover {
     transform: scale(1.2);
-    text-decoration: underline;
+    text-decoration:underline;
     color: black;
-    
 }
 
 .logo:hover {
-    transform: scale(1.);
+    transform: scale(1);
 }
 
 .socialMediaLogos:hover {
-    transform: scale(1.);
+    transform: scale(1);
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 64px;
-}
+
 
 .socialMediaLogos {
     margin-left: 12px;
     margin-right: 12px;
     transition: 0.2s;
-    cursor:pointer;
+    cursor: pointer;
     width: 50px;
     height: 50px;
 }
 
 h1 {
-    color: #e26868;
+    font-family: 'Fire Code-Light';
+    color: #07bebe;
 }
 
 h2 {
-    color: #e26868;
+    font-family: 'Fire Code-Light';
+    color: #07bebe;
 }
 
 footer {
@@ -110,5 +105,13 @@ footer {
     width: 100%;
     /* background-color:rgb(30,30,40) */
     text-align: center;
-  }
+}
 
+button {
+    margin-top: 5px;
+}
+
+#navArrow {
+    cursor: e-resize;
+
+}
