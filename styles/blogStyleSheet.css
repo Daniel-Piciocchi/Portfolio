@@ -27,7 +27,8 @@ h4:hover {
 
 #gridContainer {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
 }
 
 .gridItem {
@@ -40,5 +41,5 @@ h4:hover {
 
 .blog {
     text-decoration: overline;
-    color: #d95656
+    color: #d95656;
 }
