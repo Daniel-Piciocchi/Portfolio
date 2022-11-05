@@ -5,6 +5,24 @@
     src: url('../fonts/FiraCode-Light.ttf');
 }
 
+@media screen and (max-width: 768px) {
+    .navigationContainer {
+        display: none;
+    }
+    #hamburger{
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navigationContainer {
+        display: flex;
+    }
+    #hamburger{
+        display: none;
+    }
+}
+
 html {
     background: rgb(30, 30, 40);
     /* background-image: url("../images/background-image.jpg");
@@ -27,7 +45,6 @@ body {
 }
 
 .navigationContainer {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: right;
@@ -39,7 +56,6 @@ body {
 }
 
 .logo {
-    /* padding-top: 20px; */
     transition: 0.2s;
     cursor: pointer;
 }
@@ -58,12 +74,14 @@ a {
     display: inline-block;
     margin-left: 4px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight:bold;
+    /* font-variant:small-caps; */
+    
 }
 
 a:hover {
     transform: scale(1.2);
-    text-decoration:underline;
+    text-decoration: underline;
     color: black;
 }
 
@@ -73,10 +91,7 @@ a:hover {
 
 .socialMediaLogos:hover {
     transform: scale(1);
-    
 }
-
-
 
 .socialMediaLogos {
     margin-left: 12px;
@@ -85,7 +100,7 @@ a:hover {
     cursor: pointer;
     width: 25px;
     height: 25px;
-    filter: brightness(0)
+    filter: brightness(0);
 }
 
 h1 {
@@ -113,5 +128,5 @@ button {
 
 #navArrow {
     cursor: e-resize;
-
 }
+

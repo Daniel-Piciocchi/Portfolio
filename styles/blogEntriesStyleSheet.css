@@ -11,8 +11,10 @@ h2 {
     justify-content: center;
 }
 
-.blog2IMG {
+.blogIMG {
     border-radius: 20px;
+    height: 200px;
+    width: 200px;
 }
 
 article {
