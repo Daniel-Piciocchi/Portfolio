@@ -4,7 +4,7 @@
 h1 {
     text-align: center;
     text-decoration: underline;
-    color: #d95656;
+    color: #5B84B1FF;
 }
 
 .pdfIMG {
@@ -19,7 +19,7 @@ h1 {
 
 .projects {
     text-decoration: overline;
-    color: #d95656;
+    color: azure;
 }
 
 .projectsPDF {

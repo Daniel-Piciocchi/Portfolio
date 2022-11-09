@@ -1,3 +1,27 @@
+
+# Portfolio - Beginner Friendly Website
+
+A website created from scratch using introductory to web development tools html and CSS.
+
+
+## Table of Contents
+
+- html
+- css
+- wireframes
+- git
+
+## HTML
+
+Began by creating the skeleton (! + Enter in VScode), followed by links to CSS style sheets, one representing a universal style sheet, and the other specific to the page being represented. Additionally, the main container, navigation container, quote container, body container, and footer were created.
+
+The header contains a home button logo on the left hand side, and 4 navigation buttons, 'About', 'Blog', 'Work', and 'Contact' along the right hand side.
+
+Inside the body a quote container was created followed by space for a 'Profile Pic' on the left-hand side, and space for a brief intro with a name and description on the right-hand side of the image.
+
+A section containing the footer was implemented to sit center and bottom of the page with social media links to 'GitHub', 'LinkdIn', and a 'Contact' button that links to another page for leaving details.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,19 +34,23 @@
     </head>
     <body>
         <main class="container">
+            <img
+                id="hamburger"
+                src="./images/hamburger-menu.png"
+                width="50"
+                height="50"
+            />
             <div class="navigationContainer">
                 <div class="logo">
-                    <a href="./home.html">
+                    <a href="./home.html" alt="Logo Home Page">
                         <img
                             src="./images/coding-logo.png"
-                            width="25.9"
-                            height="11.2"
-                            alt="Home Page Logo"
+                            width="70"
+                            height="50"
                         />
                     </a>
                 </div>
                 <nav>
-                    <!-- <a id="navArrow" class="home" href="./home.html">Home</a> -->
                     <a id="navArrow" href="./pages/about.html">About</a>
                     <a id="navArrow" href="./pages/blogs/blog.html">Blog</a>
                     <a id="navArrow" href="./pages/work.html">Work</a>
@@ -38,7 +66,6 @@
                     src="./images/profile-pic.png"
                     width="224"
                     height="183"
-                    alt="Profile-Pic"
                 />
                 <div class="intro">
                     <p>Daniel Piciocchi</p>
@@ -74,3 +101,6 @@
         </main>
     </body>
 </html>
+```
+## CSS
+

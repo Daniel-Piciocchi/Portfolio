@@ -1,6 +1,4 @@
 @font-face {
-    /* font-family: 'Nexa Regular';
-    src: url('./fonts/NexaRegular.otf'); */
     font-family: 'Fire Code-Light';
     src: url('../fonts/FiraCode-Light.ttf');
 }
@@ -9,8 +7,7 @@
     .navigationContainer {
         display: none;
     }
-    #hamburger{
-
+    #hamburger {
     }
 }
 
@@ -18,30 +15,38 @@
     .navigationContainer {
         display: flex;
     }
-    #hamburger{
+    #hamburger {
         display: none;
+    }
+    .container {
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }
 
 html {
     background: rgb(30, 30, 40);
-    /* background-image: url("../images/background-image.jpg");
-    background-size:cover; */
-    /* font-family: "Lucida Console", "Courier New", monospace; */
+    
+    
 }
 
 body {
     background: rgb(30, 30, 40);
+    
+    
 }
 
 .container {
-    background: #ece5da;
-    margin-left: 15%;
-    margin-right: 15%;
+    /* background: #ece5da; */
     padding-top: 32px;
     padding-left: 16px;
     padding-right: 16px;
     min-height: 100vh;
+    background: linear-gradient(to right, #FC766AFF 0%, #5B84B1FF 100%);
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    
+    
 }
 
 .navigationContainer {
@@ -53,6 +58,8 @@ body {
     top: 0;
     width: 65%;
     margin-top: 1%;
+    
+    
 }
 
 .logo {
@@ -62,31 +69,32 @@ body {
 
 p {
     font-family: 'Fire Code-Light';
-    color: grey;
+    /* color: grey; */
     text-align: center;
 }
 
 a {
     font-family: 'Fire Code-Light';
-    color: #07bebe;
-    font-size: 16px;
+    color:#FBFAF5be;
+    font-size: 18px;
     transition: transform 0.2s;
     display: inline-block;
     margin-left: 4px;
     text-decoration: none;
-    font-weight:bold;
-    /* font-variant:small-caps; */
-    
+    font-weight: bold;
+    font-variant:small-caps;
 }
 
 a:hover {
     transform: scale(1.2);
     text-decoration: underline;
-    color: black;
+    color: azure;
+   
 }
 
 .logo:hover {
     transform: scale(1);
+    filter: brightness(10)
 }
 
 .socialMediaLogos:hover {
@@ -100,12 +108,12 @@ a:hover {
     cursor: pointer;
     width: 25px;
     height: 25px;
-    filter: brightness(0);
+    filter: brightness(100);
 }
 
 h1 {
     font-family: 'Fire Code-Light';
-    color: #d95656;
+    color: #5B84B1FF;
 }
 
 h2 {
@@ -129,4 +137,18 @@ button {
 #navArrow {
     cursor: e-resize;
 }
+
+nav a {
+    /* background: linear-gradient(to right, #FC766AFF 0%, #5B84B1FF 100%); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent;  */
+    color: #5B84B1FF
+}
+
+p {
+    background: linear-gradient(to right, #FC766AFF 0%, #5B84B1FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 

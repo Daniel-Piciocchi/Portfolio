@@ -3,14 +3,14 @@ body { background:rgb(30,30,40); }
 form { max-width:420px; margin:50px auto; }
 
 .feedback-input {
-  color:black;
+  color:white;
    font-family: 'Fire Code-Light';
   font-weight:500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #07bebe;
+  border:2px solid #5B84B1FF;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -19,7 +19,7 @@ form { max-width:420px; margin:50px auto; }
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid #CC4949; }
+.feedback-input:focus { border:2px solid #FBFAF5be; }
 
 textarea {
   height: 150px;
@@ -30,7 +30,7 @@ textarea {
 [type="submit"] {
   font-family: 'Fire Code-Light';
   width: 100%;
-  background:#CC6666;
+  background: darkgrey;
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -42,7 +42,7 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:#CC4949; }
+[type="submit"]:hover { background:#FBFAF5be; }
 
 h1 {
   text-decoration:  underline;
@@ -51,5 +51,5 @@ h1 {
 
 .contact {
   text-decoration: overline;
-  color: #d95656;
+  color: azure;
 }

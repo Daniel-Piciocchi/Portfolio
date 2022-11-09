@@ -5,7 +5,7 @@
 h1 {
     text-align: center;
     text-decoration: underline;
-    color: #d95656;
+    color: #5B84B1FF;
 }
 
 h4 {
@@ -18,7 +18,7 @@ h4 {
 h4:hover {
     transform: scale(1);
     text-decoration: underline;
-    /* color: #e26868; */
+    color:#5B84B1FF;
 }
 
 .blogIMG {
@@ -42,5 +42,5 @@ h4:hover {
 
 .blog {
     text-decoration: overline;
-    color: #d95656;
+    color: azure;
 }

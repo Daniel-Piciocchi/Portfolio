@@ -1,6 +1,6 @@
 .bodyContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -22,12 +22,11 @@
     .bodyContainer {
         flex-direction: column;
     }
-        .intro {
-            padding-top: 16px;
-        }
-        
+    .intro {
+        padding-top: 16px;
     }
-    
+}
+
 .profilePic {
     border-radius: 50%;
 }
@@ -40,10 +39,10 @@ footer {
 }
 
 .box {
-  
 }
 
 .home {
     text-decoration: overline;
     color: #d95656;
 }
+

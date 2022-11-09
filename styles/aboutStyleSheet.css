@@ -1,11 +1,21 @@
 h1 {
     text-align: center;
     text-decoration-line: underline;
-    color: #d95656;
+    color: #5B84B1FF;
 }
 
 .about {
     text-decoration: overline;
-    color: #d95656;
+    color: #FBFAF5;
 
 }
+
+
+/* 
+article {
+    background: linear-gradient(to right, red 0%, purple 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+      
