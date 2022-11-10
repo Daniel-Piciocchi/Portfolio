@@ -13,45 +13,99 @@
             <div class="navigationContainer">
                 <div class="logo">
                     <a href="../home.html" alt="Logo Home Page">
-                    <img
-                        src="../images/coding-logo.png"
-                        width="25.9"
-                        height="11.2"
-                        alt="Home Page Logo"
-                    />
+                        <img
+                            src="../images/coding-logo.png"
+                            width="38.85"
+                            height="16.8"
+                            alt="Home Page Logo"
+                        />
+                    </a>
                 </div>
-                <nav class="menuLinks">
-                    <!-- <a id="navArrow" href="../home.html">Home</a> -->
+                <nav id="main-menu">
                     <a id="navArrow" href="./about.html">About</a>
                     <a id="navArrow" href="./blogs/blog.html">Blog</a>
-                    <a id="navArrow" class="projects" href="./work.html">Work</a>
+                    <a id="navArrow" class="projects" href="./work.html"
+                        >Work</a
+                    >
                     <a id="navArrow" href="../pages/contact.html">Contact</a>
                 </nav>
+                <nav class="menuLinks">
+                    <a id="navArrow" href="./about.html">About</a>
+                    <a id="navArrow" href="./blogs/blog.html">Blog</a>
+                    <a id="navArrow" class="work" href="./work.html"
+                        >Work</a
+                    >
+                    <a id="navArrow" href="../pages/contact.html">Contact</a>
+                </nav>
+                <input
+                    type="checkbox"
+                    id="hamburger-input"
+                    class="burger-shower"
+                />
+                <label id="hamburger-menu" for="hamburger-input">
+                    <nav id="sidebar-menu">
+                        <ul>
+                            <li>
+                                <a id="navArrow" href="./about.html">About</a>
+                            </li>
+                            <li>
+                                <a id="navArrow" href="./blogs/blog.html"
+                                    >Blog</a
+                                >
+                            </li>
+                            <li>
+                                <a id="navArrow" href="./work.html">Work</a>
+                            </li>
+                            <li>
+                                <a id="navArrow" href="./contact.html"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </label>
+
+                <div class="overlay"></div>
             </div>
             <section>
-            <h1>Projects</h1>
-            <div class="projectsPDF">
-            <a href="../projects+resume/Resume + Portfolio.pdf">
-                <h4>Resume + Portfolio</h4>
-                    <img class="pdfIMG" src="../images/pdf.png" />
+            <h2>Work</h2>
+            <div id="sectionContainer">
                 
-            </a>
-            <a href="../projects+resume/Project1.pdf">
-                <h4>Project 1</h4>
-                    <img class="pdfIMG" src="../images/pdf.png" />
+                    
+                    <div class="dropdown">
+                        <h1>&#8594; Skills</h1>
+                        <div class="dropdown-content">
+                            <p>* HTML</p>
+                            <p>* CSS</p>
+                        </div>
+                    </div>
+            
+            
+                    <div class="dropdown">
+                        <h1>&#8594; Projects</h1>
+                        <div class="dropdown-content">
+                            <a href="../projects+resume/Project1.pdf">
+                                <p>Project 1</p>
+                            </a>
+                            <a href="../projects+resume/Project2.pdf">
+                                <p>Project 2</p>
+                            </a>
+                            <a href="../projects+resume/Resume + Portfolio.pdf">
+                                <p>Resume + Portfolio</p>
+                            </a>
+                        </div>
+                    </div>
                 
-            </a>
-            <a href="../projects+resume/Project2.pdf">
-                <h4>Project 2</h4>
-                    <img class="pdfIMG" src="../images/pdf.png" />
                 
-            </a>
-            <a href="../projects+resume/Project3.pdf">
-                <h4>Project 3</h4>
-                    <img class="pdfIMG" src="../images/pdf.png" />
-            </a>
-            </div>
+                    <div class="dropdown">
+                        <h1>&#8594; Education</h1>
+                        <div class="dropdown-content">
+                            <p>Diploma of Information Technology (pending)</p>
+                            <p>Bachelor of Philosophy</p>
+                        </div>
+                    </div>
             </section>
+            </div>
         </main>
     </body>
 </html>

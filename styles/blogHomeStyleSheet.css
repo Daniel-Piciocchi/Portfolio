@@ -5,7 +5,6 @@
 h1 {
     text-align: center;
     text-decoration: underline;
-    color: #5B84B1FF;
 }
 
 h4 {
@@ -15,14 +14,16 @@ h4 {
     cursor: pointer;
 }
 
-h4:hover {
-    transform: scale(1);
+.gridItem:hover {
+    transform: scale(1.2);
     text-decoration: underline;
-    color:#5B84B1FF;
+    color:lightgray;
+    transition: transform 0.2s;
 }
 
 .blogIMG {
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 120px;
     
 }
 
@@ -37,10 +38,10 @@ h4:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 8px;
+    /* margin: 8px; */
 }
 
 .blog {
     text-decoration: overline;
-    color: azure;
+    color: lightgray;
 }

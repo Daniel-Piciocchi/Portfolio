@@ -10,24 +10,64 @@
     </head>
     <body>
         <main class="container">
+            <header>
             <div class="navigationContainer">
                 <div class="logo">
                     <a href="./home.html">
                         <img
                             src="./images/coding-logo.png"
-                            width="25.9"
-                            height="11.2"
+                            width="38.85"
+                            height="16.8"
                             alt="Home Page Logo"
                         />
                     </a>
                 </div>
-                <nav>
-                    <!-- <a id="navArrow" class="home" href="./home.html">Home</a> -->
+                <nav id="main-menu">
                     <a id="navArrow" href="./pages/about.html">About</a>
                     <a id="navArrow" href="./pages/blogs/blog.html">Blog</a>
                     <a id="navArrow" href="./pages/work.html">Work</a>
                     <a id="navArrow" href="./pages/contact.html">Contact</a>
                 </nav>
+                <nav class="menuLinks">
+                    <a id="navArrow" href="./pages/about.html">About</a>
+                    <a id="navArrow" href="./pages/blogs/blog.html">Blog</a>
+                    <a id="navArrow" href="./pages/work.html">Work</a>
+                    <a id="navArrow" href="./pages/contact.html">Contact</a>
+                </nav>
+                <input
+                    type="checkbox"
+                    id="hamburger-input"
+                    class="burger-shower"
+                />
+                <label id="hamburger-menu" for="hamburger-input">
+                    <nav id="sidebar-menu">
+                        <ul>
+                            <li>
+                                <a id="navArrow" href="./pages/about.html"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a id="navArrow" href="./pages/blogs/blog.html"
+                                    >Blog</a
+                                >
+                            </li>
+                            <li>
+                                <a id="navArrow" href="./pages/work.html"
+                                    >Work</a
+                                >
+                            </li>
+                            <li>
+                                <a id="navArrow" href="./pages/contact.html"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </label>
+
+                <div class="overlay"></div>
+            </header>
             </div>
             <section class="quoteContainer">
                 <p>'Just trying to keep the power on in Jurassic Park'</p>
@@ -50,23 +90,23 @@
                     <img
                         class="socialMediaLogos"
                         src="./images/github-logo.png"
-                        a="github-logo"
+                        alt="github-logo"
                     />
                 </a>
                 <a href="https://au.linkedin.com/" target="_blank">
                     <img
                         class="socialMediaLogos"
                         src="./images/linked-in-logo.png"
-                        a="linked-in-logo"
+                        alt="linked-in-logo"
                         height="64"
                         href="https://au.linkedin.com/"
                     />
                 </a>
-                <a href="./pages/contact.html">
+                <a href=mailto:daniel_piciocchi@outlook.com?>
                     <img
                         class="socialMediaLogos"
                         src="./images/contact-background.png"
-                        a="linked-in-logo"
+                        alt="linked-in-logo"
                         height="64"
                     />
                 </a>

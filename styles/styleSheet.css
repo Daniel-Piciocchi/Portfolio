@@ -5,48 +5,42 @@
 
 @media screen and (max-width: 768px) {
     .navigationContainer {
-        display: none;
+        display: flex;
+        width: 85%;
     }
-    #hamburger {
-    }
+    
 }
 
 @media screen and (min-width: 768px) {
     .navigationContainer {
         display: flex;
-    }
-    #hamburger {
-        display: none;
+        width: 65%;
     }
     .container {
         margin-left: 15%;
         margin-right: 15%;
+        padding-top: 20px;
     }
+   
 }
 
 html {
     background: rgb(30, 30, 40);
-    
-    
 }
 
 body {
     background: rgb(30, 30, 40);
-    
-    
 }
 
 .container {
     /* background: #ece5da; */
-    padding-top: 32px;
+    /* padding-top: 32px; */
     padding-left: 16px;
     padding-right: 16px;
-    min-height: 100vh;
-    background: linear-gradient(to right, #FC766AFF 0%, #5B84B1FF 100%);
+    /* min-height: 100vh; */
+    background: linear-gradient(to right, #fc766aff 0%, #5b84b1ff 100%);
     -webkit-background-clip: text;
     /* -webkit-text-fill-color: transparent; */
-    
-    
 }
 
 .navigationContainer {
@@ -56,69 +50,86 @@ body {
     height: 50px;
     position: fixed;
     top: 0;
-    width: 65%;
-    margin-top: 1%;
-    
-    
+    margin-top: 5%;
 }
 
 .logo {
     transition: 0.2s;
     cursor: pointer;
+    /* width: 32.4px;
+    height: 14px; */
+    /* filter: hue-rotate(355deg); */
 }
 
 p {
     font-family: 'Fire Code-Light';
-    /* color: grey; */
     text-align: center;
 }
 
 a {
     font-family: 'Fire Code-Light';
-    color:#FBFAF5be;
+    color: #5b84b1ff;
     font-size: 18px;
     transition: transform 0.2s;
     display: inline-block;
     margin-left: 4px;
     text-decoration: none;
     font-weight: bold;
-    font-variant:small-caps;
+    font-variant: small-caps;
 }
 
-a:hover {
+.menuLinks a:hover {
     transform: scale(1.2);
     text-decoration: underline;
-    color: azure;
-   
+    color: lightgray;
 }
 
 .logo:hover {
-    transform: scale(1);
-    filter: brightness(10)
+    transform: scale(1.2);
+    filter: brightness(10);
 }
 
 .socialMediaLogos:hover {
-    transform: scale(1);
+    transform: scale(1.4);
 }
 
+#hamburger-menu:hover {
+    cursor: pointer;
+}
+
+#hamburger-menu:active {
+    background: rgb(30, 30, 40);
+}
+
+/* #sidebar-menu:active {
+    transform: 0;
+} */
+
 .socialMediaLogos {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
     transition: 0.2s;
     cursor: pointer;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     filter: brightness(100);
 }
 
 h1 {
     font-family: 'Fire Code-Light';
-    color: #5B84B1FF;
+    color: lightgray;
+    font-size: 32px;
+    padding-top: 40px;
 }
 
 h2 {
     font-family: 'Fire Code-Light';
-    color: #d95656;
+    color: lightgray;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline;
 }
 
 footer {
@@ -126,12 +137,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    /* background-color:rgb(30,30,40) */
     text-align: center;
-}
-
-button {
-    margin-top: 5px;
 }
 
 #navArrow {
@@ -139,16 +145,157 @@ button {
 }
 
 nav a {
-    /* background: linear-gradient(to right, #FC766AFF 0%, #5B84B1FF 100%); */
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent;  */
-    color: #5B84B1FF
+    color: #5b84b1ff;
 }
 
 p {
-    background: linear-gradient(to right, #FC766AFF 0%, #5B84B1FF 100%);
+    background: linear-gradient(to right, #fc766aff 0%, #5b84b1ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+}
 
+#main-menu {
+    display: block;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    z-index: 9;
+}
+
+#main-menu ul {
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9;
+}
+
+/* #main-menu li {
+    list-style-type: none;
+    font-size: 2rem;
+} */
+/* 
+#main-menu a {
+    color: #fab9d7;
+    font-size: 1.5rem;
+    text-decoration: none;
+} */
+
+#main-menu a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-input {
+    display: none;
+}
+
+#hamburger-menu {
+    width: 25px;
+    height: 25px;
+    /* display: block; */
+    border-radius: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(
+        to bottom,
+        #5b84b1ff,
+        #fc766aff 20%,
+        rgb(30, 30, 40) 20%,
+        rgb(30, 30, 40) 40%,
+        #5b84b1ff 40%,
+        #fc766aff 60%,
+        rgb(30, 30, 40) 60%,
+        rgb(30, 30, 40) 80%,
+        #5b84b1ff 80%,
+        #fc766aff 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    opacity: 95%;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 160px;
+    height: 100%;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+#hamburger-menu h3 {
+    color: lightgray;
+    font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+    padding-left: 0px;
+}
+
+#hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem;
+}
+
+#hamburger-menu a {
+    color: lightgray;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    right: 0;
+}
+#hamburger-input:checked ~ .overlay {
+    visibility: visible;
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 750px) {
+    #main-menu {
+        display: none;
+    }
+    #hamburger-menu {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    #main-menu {
+        display: none;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .menuLinks {
+        display: none;
+    }
+}

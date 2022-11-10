@@ -24,7 +24,7 @@ form { max-width:420px; margin:50px auto; }
 textarea {
   height: 150px;
   line-height: 150%;
-  resize:vertical;
+  resize:none;
 }
 
 [type="submit"] {
@@ -51,5 +51,5 @@ h1 {
 
 .contact {
   text-decoration: overline;
-  color: azure;
+  color: lightgray;
 }

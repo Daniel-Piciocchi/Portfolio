@@ -6,9 +6,9 @@ h2 {
 }
 
 h4 {
-    color: azure;
+    color: lightgray;
 }
-    
+
 #imageContainer {
     display: flex;
     align-items: center;
@@ -16,9 +16,10 @@ h4 {
 }
 
 .blogIMG {
-    border-radius: 20px;
+    border-radius: 140px;
     height: 200px;
     width: 200px;
+    padding: 30px;
 }
 
 article {

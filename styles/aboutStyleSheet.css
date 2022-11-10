@@ -1,12 +1,12 @@
 h1 {
     text-align: center;
     text-decoration-line: underline;
-    color: #5B84B1FF;
+    /* color: #5B84B1FF; */
 }
 
 .about {
     text-decoration: overline;
-    color: #FBFAF5;
+    color: lightgray;
 
 }
 
