@@ -11,27 +11,30 @@ h1 {
     flex-direction: column;
 }
 
+
+/* hidden drop-down box that reveals on hover */
+.dropdown-content {
+    display: none;
+    /* top: 60px;
+    left: 40px;
+    padding-right: 20px; */
+    transition: 5s;
+}
+
 .dropdown:hover .dropdown-content {
     display: flex;
     flex-direction: column;
 }
 
-.dropdown-content {
-    display: none;
-    top: 60px;
-    left: 40px;
-    padding-right: 20px;
-    transition: 5s;
-}
-
 .dropdown h1 {
     color: #5b84b1ff;
     text-decoration: none;
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 
-.dropdown h1:hover {
+.dropdown h1:active {
     color: lightgray;
+    text-decoration: underline;
 }
 
 .work {

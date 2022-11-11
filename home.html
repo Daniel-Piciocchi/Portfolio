@@ -10,8 +10,10 @@
     </head>
     <body>
         <main class="container">
-            <header>
-            <div class="navigationContainer">
+            <!-- NAvigation header, contains hamburger menu for when on mobile and
+                naviagation links for when on larger devices
+            -->
+            <header class="navigationContainer">
                 <div class="logo">
                     <a href="./home.html">
                         <img
@@ -22,23 +24,27 @@
                         />
                     </a>
                 </div>
+                <!-- Navigation links which appear on larger breakpoints -->
                 <nav id="main-menu">
                     <a id="navArrow" href="./pages/about.html">About</a>
                     <a id="navArrow" href="./pages/blogs/blog.html">Blog</a>
                     <a id="navArrow" href="./pages/work.html">Work</a>
                     <a id="navArrow" href="./pages/contact.html">Contact</a>
                 </nav>
+                <!-- These links will be hidden from the user until on click of the hamburger menu -->
                 <nav class="menuLinks">
                     <a id="navArrow" href="./pages/about.html">About</a>
                     <a id="navArrow" href="./pages/blogs/blog.html">Blog</a>
                     <a id="navArrow" href="./pages/work.html">Work</a>
                     <a id="navArrow" href="./pages/contact.html">Contact</a>
                 </nav>
+                <!-- Hidden input tag, so we can track clicks of the hamburger menu. -->
                 <input
                     type="checkbox"
                     id="hamburger-input"
                     class="burger-shower"
                 />
+                <!-- Hamburger menu will be shown only only mobile. Clicking this will trigger the menu links to animate out -->
                 <label id="hamburger-menu" for="hamburger-input">
                     <nav id="sidebar-menu">
                         <ul>
@@ -65,10 +71,10 @@
                         </ul>
                     </nav>
                 </label>
-
+                <!-- This will appear over the entire screen as opacity when the menu links are on screen -->
                 <div class="overlay"></div>
             </header>
-            </div>
+
             <section class="quoteContainer">
                 <p>'Just trying to keep the power on in Jurassic Park'</p>
             </section>
@@ -82,9 +88,10 @@
                 />
                 <div class="intro">
                     <p>Daniel Piciocchi</p>
-                    <p>Future Full Stack-Developer</p>
+                    <p>Future Full Stack Developer</p>
                 </div>
             </section>
+            <!-- Footer is fixed along bottom of screen so always accessible -->
             <footer>
                 <a href="https://github.com/Daniel-Piciocchi" target="_blank">
                     <img
@@ -102,7 +109,8 @@
                         href="https://au.linkedin.com/"
                     />
                 </a>
-                <a href=mailto:daniel_piciocchi@outlook.com?>
+                <!-- Clicking this will open up an email ...... -->
+                <a href="mailto:daniel_piciocchi@outlook.com?">
                     <img
                         class="socialMediaLogos"
                         src="./images/contact-background.png"
