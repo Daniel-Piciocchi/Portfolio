@@ -10,12 +10,12 @@
   line-height: 22px;
   background-color: transparent;
   border:2px solid #5B84B1FF;
-  /* transition: all 0.3s; */
+  transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
   width:100%;
   box-sizing: border-box;
-  /* outline:0; */
+  outline:0;
 }
 
 /* increased comment box size */

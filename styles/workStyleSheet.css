@@ -1,3 +1,21 @@
+@media screen and (max-width: 750px) {
+    .dropdown-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .dropdown-content {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+    }
+}
+
 h1 {
     text-align: center;
     text-decoration: underline;
@@ -11,13 +29,8 @@ h1 {
     flex-direction: column;
 }
 
-
 /* hidden drop-down box that reveals on hover */
 .dropdown-content {
-    display: none;
-    /* top: 60px;
-    left: 40px;
-    padding-right: 20px; */
     transition: 5s;
 }
 
@@ -29,7 +42,11 @@ h1 {
 .dropdown h1 {
     color: #5b84b1ff;
     text-decoration: none;
-    /* padding-right: 20px; */
+}
+
+.dropdown p {
+    color: #5b84b1ff;
+    font-size: 18px;
 }
 
 .dropdown h1:active {

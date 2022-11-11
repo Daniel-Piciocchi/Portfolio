@@ -2,32 +2,7 @@
     font-family: 'Fire Code-Light';
     src: url('../fonts/FiraCode-Light.ttf');
 }
-/* when device below 750px remove nav links and show hamburger menu */
-@media screen and (max-width: 750px) {
-    #main-menu {
-        display: none;
-    }
-    #hamburger-menu {
-        display: inline;
-    }
-}
-/* when screen greather than 450px remove hamburger menu and show nav links */
-@media screen and (min-width: 450px) {
-    #main-menu {
-        display: none;
-    }
-    #hamburger-menu {
-        display: none;
-    }
-}
 
-@media screen and (max-width: 450px) {
-    .menuLinks {
-        display: none;
-    }
-}
-
-/* On smaller devices we show a logo on left and hamburger menu on right, this will move them to either end of screen */
 @media screen and (max-width: 768px) {
     .navigationContainer {
         display: flex;
@@ -40,7 +15,6 @@
         display: flex;
         width: 65%;
     }
-    /* On desktop to remove unnecessarry s[ace, we create margins that look like gutters on left and right of screen */
     .container {
         margin-left: 15%;
         margin-right: 15%;
@@ -56,7 +30,6 @@ body {
     background: rgb(30, 30, 40);
 }
 
-/* This is our p[arent container, everything is padded inside this */
 .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -64,7 +37,6 @@ body {
     -webkit-background-clip: text;
 }
 
-/* Fix the header al;ong top of screen so alway acceisble */
 .navigationContainer {
     flex-direction: row;
     justify-content: space-between;
@@ -96,7 +68,7 @@ a {
     font-weight: bold;
     font-variant: small-caps;
 }
-/* all a tag inside menu links scale by 120% */
+
 .menuLinks a:hover {
     transform: scale(1.2);
     text-decoration: underline;
@@ -114,10 +86,6 @@ a {
 
 #hamburger-menu:hover {
     cursor: pointer;
-}
-/* flash click button */
-#hamburger-menu:active {
-    background: black;
 }
 
 .socialMediaLogos {
@@ -140,7 +108,7 @@ h1 {
 h2 {
     font-family: 'Fire Code-Light';
     color: lightgray;
-    padding-top: 15%;
+    padding-top: 38px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,7 +140,7 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-/* this will opacity background so menu pops out, set to hidden so not shown */
+
 .overlay {
     position: fixed;
     top: 0;
@@ -235,7 +203,7 @@ p {
         #fc766aff 100%
     );
 }
-/* hidden hamburger menu, set right off screen when unchecked by user */
+
 #hamburger-menu #sidebar-menu {
     opacity: 100%;
     visibility: hidden;
@@ -273,14 +241,36 @@ p {
 #hamburger-menu a:hover {
     text-decoration: underline;
 }
-/* when hamburger menu checked transition back to regular position */
+
 #hamburger-input:checked + #hamburger-menu #sidebar-menu {
     visibility: visible;
     right: 0;
 }
-/* this will the overlay to visible to the user */
 #hamburger-input:checked ~ .overlay {
     visibility: visible;
     opacity: 0.7;
 }
 
+@media screen and (max-width: 750px) {
+    #main-menu {
+        display: none;
+    }
+    #hamburger-menu {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    #main-menu {
+        display: none;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .menuLinks {
+        display: none;
+    }
+}
