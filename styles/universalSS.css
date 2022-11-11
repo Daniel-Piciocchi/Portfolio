@@ -4,17 +4,42 @@
 }
 
 @media screen and (max-width: 768px) {
+    #main-menu {
+        display: none;
+    }
+    #hamburger-menu {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    #main-menu {
+        display: none;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .menuLinks {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .navigationContainer {
         display: flex;
         width: 85%;
     }
 }
-
+/* when screen above 768px content is flexed */
 @media screen and (min-width: 768px) {
     .navigationContainer {
         display: flex;
         width: 65%;
     }
+ /* gutters placed on sides for desirable visibility */
     .container {
         margin-left: 15%;
         margin-right: 15%;
@@ -87,6 +112,10 @@ a {
 #hamburger-menu:hover {
     cursor: pointer;
 }
+/* appears to work like a button on click */
+#hamburger-menu:active {
+    background: rgb(30, 30, 40);
+}
 
 .socialMediaLogos {
     margin-left: 10px;
@@ -98,13 +127,6 @@ a {
     filter: brightness(100);
 }
 
-h1 {
-    font-family: 'Fire Code-Light';
-    color: slategray;
-    font-size: 22px;
-    padding-top: 40px;
-}
-
 h2 {
     font-family: 'Fire Code-Light';
     color: lightgray;
@@ -114,7 +136,7 @@ h2 {
     align-items: center;
     text-decoration: underline;
 }
-
+/* fixed to bottom of homepage for easier accesibility */
 footer {
     position: fixed;
     left: 0;
@@ -154,26 +176,6 @@ p {
     background: black;
     z-index: -1;
 }
-/* 
-#main-menu {
-    display: block;
-    height: 100px;
-    width: 100%;
-    margin: 0px;
-    z-index: 9;
-} */
-/* 
-#main-menu ul {
-    max-width: 800px;
-    width: 100%;
-    height: 100%;
-    margin: 0px auto;
-    padding: 0px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 9;
-} */
 
 #main-menu a:hover {
     text-decoration: underline;
@@ -218,11 +220,6 @@ p {
     padding-top: 20px;
 }
 
-/* #hamburger-menu h3 {
-    color: lightgray;
-    font-size: 2.2rem;
-} */
-
 #hamburger-menu ul {
     padding-left: 0px;
 }
@@ -233,7 +230,6 @@ p {
 }
 
 #hamburger-menu a {
-    /* color: #5b84b1ff; */
     font-size: 1.4rem;
     text-decoration: none;
 }
@@ -251,26 +247,4 @@ p {
     opacity: 0.7;
 }
 
-@media screen and (max-width: 750px) {
-    #main-menu {
-        display: none;
-    }
-    #hamburger-menu {
-        display: inline;
-    }
-}
 
-@media screen and (min-width: 450px) {
-    #main-menu {
-        display: none;
-    }
-    #hamburger-menu {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .menuLinks {
-        display: none;
-    }
-}

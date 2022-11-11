@@ -18,8 +18,8 @@
 
 h1 {
     text-align: center;
-    text-decoration: underline;
-    padding: 0;
+    font-family: 'Fire Code-Light';
+    font-size: 22px;
 }
 
 #sectionContainer {

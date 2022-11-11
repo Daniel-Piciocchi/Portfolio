@@ -1,8 +1,8 @@
 
-h1 {
+/* h1 {
     text-align: center;
     text-decoration: underline;
-}
+} */
 
 h4 {
     text-align: center;
@@ -27,7 +27,7 @@ h4 {
     text-decoration: underline;
 }
 
-/* created grid to fit blogs evenly */
+/* displayed grid to fit blogs evenly */
 #gridContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, 250px);
@@ -46,6 +46,5 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin: 8px; */
 }
 

@@ -6,10 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>About</title>
         <link rel="stylesheet" href="../styles/universalSS.css" />
-        <link rel="stylesheet" href="../styles/aboutSS.css" />
+        <link rel="stylesheet" href="../styles/aboutStyleSheet.css" />
     </head>
     <body>
         <main class="container">
+            <!-- Navigation header, contains logo that links to home, hamburger menu for when on mobile and
+            naviagation links for when on larger devices
+            -->
             <header class="navigationContainer">
                 <div class="logo">
                     <a href="../home.html" alt="Logo Home Page">
@@ -21,12 +24,14 @@
                         />
                     </a>
                 </div>
+                <!-- Navigation links which appear on larger breakpoints -->
                 <nav id="main-menu">
                     <a id="navArrow" class="about" href="./about.html">About</a>
                     <a id="navArrow" href="./blogs/blog.html">Blog</a>
                     <a id="navArrow" href="./work.html">Work</a>
                     <a id="navArrow" href="../pages/contact.html">Contact</a>
                 </nav>
+                <!-- These links will be hidden from the user until on click of the hamburger menu -->
                 <nav class="menuLinks">
                     <a id="navArrow" class="about" href="./about.html"
                         >About</a
@@ -35,11 +40,13 @@
                     <a id="navArrow" href="./work.html">Work</a>
                     <a id="navArrow" href="../pages/contact.html">Contact</a>
                 </nav>
+                <!-- Hidden input tag, to track clicks of the hamburger menu. -->
                 <input
                     type="checkbox"
                     id="hamburger-input"
                     class="burger-shower"
                 />
+                <!-- Hamburger menu will be shown only on mobile. Clicking this will trigger the menu links to animate out -->
                 <label id="hamburger-menu" for="hamburger-input">
                     <nav id="sidebar-menu">
                         <ul>
@@ -66,15 +73,12 @@
                         </ul>
                     </nav>
                 </label>
+                <!-- This will appear over the entire screen as opacity when the menu links are on screen -->
                 <div class="overlay"></div>
             </header>
             <section>
                 <h2>Who Am I?</h2>
-                <article>
-                    <!-- <p>
-                        Oh, Hello, call me Dan, or if you feel inclined, use my
-                        msn name, QTpie44.
-                    </p> -->
+                <article>                  
                     <p>
                         I am a full stack developer, in training. The meaning of
                         those three words are at present a mystery to me, yet by the

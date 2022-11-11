@@ -41,7 +41,7 @@ textarea {
   font-weight:700;
 }
 
-/* hover change bakground color */
+/* hover over button changes bakground color */
 [type="submit"]:hover 
   { background:#FBFAF5be; }
 
@@ -53,4 +53,8 @@ h1 {
 .contact {
   text-decoration: overline;
   color: lightgray;
+}
+
+h2 {
+  padding-bottom: 20px;
 }
