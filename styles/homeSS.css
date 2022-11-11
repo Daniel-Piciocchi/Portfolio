@@ -1,3 +1,12 @@
+@media screen and (max-width: 600px) {
+    .bodyContainer {
+        flex-direction: column;
+    }
+    .intro {
+        padding-bottom: 50px;
+    }
+}
+
 .bodyContainer {
     display: flex;
     justify-content: space-evenly;
@@ -18,30 +27,9 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
-    .bodyContainer {
-        flex-direction: column;
-    }
-    .intro {
-        padding-bottom: 50px;
-    }
-}
-
 .profilePic {
     border-radius: 50%;
 }
-
-/* footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 64px; */
-    /* opacity: 0.5; */
-
-/* .home {
-    text-decoration: overline;
-    color: #d95656;
-} */
 
 .intro {
     margin-top: 10px

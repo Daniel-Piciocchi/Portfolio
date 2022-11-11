@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
     text-decoration-line: underline;
-    /* color: #5B84B1FF; */
+    
 }
 
 .about {
@@ -11,11 +11,3 @@ h1 {
 }
 
 
-/* 
-article {
-    background: linear-gradient(to right, red 0%, purple 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
-
-      

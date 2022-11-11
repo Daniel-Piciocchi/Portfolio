@@ -2,14 +2,12 @@ h1 {
     text-align: center;
     text-decoration: underline;
     padding: 0;
-    /* padding-bottom: 50px; */
 }
 
 #sectionContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 20px; */
     flex-direction: column;
 }
 
@@ -18,15 +16,8 @@ h1 {
     flex-direction: column;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    /* margin: 40px; */
-}
-
 .dropdown-content {
     display: none;
-    /* position: absolute; */
     top: 60px;
     left: 40px;
     padding-right: 20px;
@@ -34,7 +25,6 @@ h1 {
 }
 
 .dropdown h1 {
-    /* margin-bottom: 120px; */
     color: #5b84b1ff;
     text-decoration: none;
     padding-right: 20px;
@@ -45,7 +35,6 @@ h1 {
 }
 
 .work {
-    text-decoration: underline;
+    text-decoration: overline;
     color: lightgray;
-    /* margin: 26.5; */
 }

@@ -12,6 +12,7 @@ h4 {
     display: inline-block;
     margin: 20px;
     cursor: pointer;
+    font-size: 28px;
 }
 
 .gridItem:hover {
