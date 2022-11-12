@@ -1,9 +1,3 @@
-
-/* h1 {
-    text-align: center;
-    text-decoration: underline;
-} */
-
 h4 {
     text-align: center;
     display: inline-block;
@@ -27,13 +21,14 @@ h4 {
     text-decoration: underline;
 }
 
-/* displayed grid to fit blogs evenly */
+/* Displayed grid to fit blogs evenly */
 #gridContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, 250px);
     justify-content: center;
 }
 
+/* User hovers over grid item, increase size by 120% */
 .gridItem:hover {
     transform: scale(1.2);
     text-decoration: underline;

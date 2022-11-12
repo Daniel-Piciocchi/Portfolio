@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="stylesheet" href="./styles/universalSS.css" />
+        <link rel="stylesheet" href="./styles/homeSS.css" />
+    </head>
+    <body>
+        <main class="container">
+            <!-- Navigation header, contains logo that links to home, hamburger menu for when on mobile and
+                naviagation links for when on larger devices -->
+            <header class="navigationContainer">
+                <div class="logo">
+                    <a href="./home.html">
+                        <img
+                            src="./images/coding-logo.png"
+                            width="38.85"
+                            height="16.8"
+                            alt="Home Page Logo"
+                        />
+                    </a>
+                </div>
+                <!-- These navigation links will be shown on larger breakpoints -->
+                <nav class="menuLinks">
+                    <a id="navArrow" href="./pages/about.html">About</a>
+                    <a id="navArrow" href="./pages/blogs/blog.html">Blog</a>
+                    <a id="navArrow" href="./pages/work.html">Work</a>
+                    <a id="navArrow" href="./pages/contact.html">Contact</a>
+                </nav>
+                <!-- Hidden input tag, to track clicks of the hamburger menu -->
+                <input
+                    type="checkbox"
+                    id="hamburger-input"
+                    class="burger-shower"
+                />
+                <!-- Hamburger menu will be shown only on mobile. Clicking this will trigger the menu links to animate out -->
+                <label id="hamburger-menu" for="hamburger-input">
+                    <nav id="sidebar-menu">
+                        <!-- These links will be hidden until hamburger menu is clicked -->
+                        <ul>
+                            <li>
+                                <a id="navArrow" href="./pages/about.html"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a id="navArrow" href="./pages/blogs/blog.html"
+                                    >Blog</a
+                                >
+                            </li>
+                            <li>
+                                <a id="navArrow" href="./pages/work.html"
+                                    >Work</a
+                                >
+                            </li>
+                            <li>
+                                <a id="navArrow" href="./pages/contact.html"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </label>
+                <!-- This will appear over the entire screen as opacity when the menu links are on screen -->
+                <div class="overlay"></div>
+            </header>
+            <section class="quoteContainer">
+                <p>'Just trying to keep the power on in Jurassic Park'</p>
+            </section>
+            <section class="bodyContainer">
+                <img
+                    class="profilePic"
+                    src="./images/profile-pic.png"
+                    width="224"
+                    height="183"
+                    alt="Profile-Pic"
+                />
+                <div class="intro">
+                    <p>Daniel Piciocchi</p>
+                    <p>Future Full Stack Developer</p>
+                </div>
+            </section>
+            <!-- Footer is fixed along bottom of home screen for accessibility -->
+            <footer>
+                <a href="https://github.com/Daniel-Piciocchi" target="_blank">
+                    <img
+                        class="socialMediaLogos"
+                        src="./images/github-logo.png"
+                        alt="github-logo"
+                    />
+                </a>
+                <a href="https://au.linkedin.com/" target="_blank">
+                    <img
+                        class="socialMediaLogos"
+                        src="./images/linked-in-logo.png"
+                        alt="linked-in-logo"
+                        height="64"
+                        href="https://au.linkedin.com/"
+                    />
+                </a>
+                <!-- Clicking this will open up an email to daniel_piciocchi@outlook.com -->
+                <a href="mailto:daniel_piciocchi@outlook.com?">
+                    <img
+                        class="socialMediaLogos"
+                        src="./images/contact-background.png"
+                        alt="linked-in-logo"
+                        height="64"
+                    />
+                </a>
+            </footer>
+        </main>
+    </body>
+</html>

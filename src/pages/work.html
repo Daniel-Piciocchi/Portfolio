@@ -11,8 +11,7 @@
     <body>
         <main class="container">
             <!-- Navigation header, contains logo that links to home, hamburger menu for when on mobile and
-                naviagation links for when on larger devices
-            -->
+                naviagation links for when on larger devices-->
             <header class="navigationContainer">
                 <div class="logo">
                     <a href="../home.html" alt="Logo Home Page">
@@ -24,16 +23,8 @@
                         />
                     </a>
                 </div>
-                <!-- Navigation links which appear on larger breakpoints -->
-                <nav id="main-menu">
-                    <a id="navArrow" href="./about.html">About</a>
-                    <a id="navArrow" href="./blogs/blog.html">Blog</a>
-                    <a id="navArrow" class="projects" href="./work.html"
-                        >Work</a
-                    >
-                    <a id="navArrow" href="../pages/contact.html">Contact</a>
                 </nav>
-                <!-- These links will be hidden from the user until on click of the hamburger menu -->
+                <!-- Navigation links which appear on larger breakpoints -->
                 <nav class="menuLinks">
                     <a id="navArrow" href="./about.html">About</a>
                     <a id="navArrow" href="./blogs/blog.html">Blog</a>
@@ -49,6 +40,7 @@
                 <!-- Hamburger menu will be shown only on mobile. Clicking this will trigger the menu links to animate out -->
                 <label id="hamburger-menu" for="hamburger-input">
                     <nav id="sidebar-menu">
+                        <!-- These links will be hidden until hamburger menu is clicked -->
                         <ul>
                             <li>
                                 <a id="navArrow" href="./about.html">About</a>
@@ -74,7 +66,7 @@
             </header>
             <section>
                 <h2>Work</h2>
-                <!-- dropdown content revealed when clicking h1 headings -->
+                <!-- Dropdown content revealed when clicking h1 headings -->
                 <div id="sectionContainer">
                     <div class="dropdown">
                         <h1>&#8594; Skills</h1>
@@ -86,13 +78,13 @@
                     <div class="dropdown">
                         <h1>&#8594; Projects</h1>
                         <div class="dropdown-content">
-                            <a href="../projects+resume/Project1.pdf">
+                            <a href="../docs/project1.pdf">
                                 <p>Project 1</p>
                             </a>
-                            <a href="../projects+resume/Project2.pdf">
+                            <a href="../docs/project2.pdf">
                                 <p>Project 2</p>
                             </a>
-                            <a href="../projects+resume/Resume + Portfolio.pdf">
+                            <a href="../docs/resume-portfolio.pdf">
                                 <p>Resume + Portfolio</p>
                             </a>
                         </div>

@@ -11,8 +11,7 @@
     <body>
         <main class="container">
             <!-- Navigation header, contains logo that links to home, hamburger menu for when on mobile and
-            naviagation links for when on larger devices
-            -->
+            naviagation links for when on larger devices -->
             <header class="navigationContainer">
                 <div class="logo">
                     <a href="../home.html" alt="Logo Home Page">
@@ -24,23 +23,14 @@
                         />
                     </a>
                 </div>
-                <!-- Navigation links which appear on larger breakpoints -->
-                <nav id="main-menu">
+                <!-- Navigation links which appear on larger breakpoints -->              
+                <nav class="menuLinks">
                     <a id="navArrow" class="about" href="./about.html">About</a>
                     <a id="navArrow" href="./blogs/blog.html">Blog</a>
                     <a id="navArrow" href="./work.html">Work</a>
                     <a id="navArrow" href="../pages/contact.html">Contact</a>
                 </nav>
-                <!-- These links will be hidden from the user until on click of the hamburger menu -->
-                <nav class="menuLinks">
-                    <a id="navArrow" class="about" href="./about.html"
-                        >About</a
-                    >
-                    <a id="navArrow" href="./blogs/blog.html">Blog</a>
-                    <a id="navArrow" href="./work.html">Work</a>
-                    <a id="navArrow" href="../pages/contact.html">Contact</a>
-                </nav>
-                <!-- Hidden input tag, to track clicks of the hamburger menu. -->
+                <!-- Hidden input tag, to track clicks of the hamburger menu -->
                 <input
                     type="checkbox"
                     id="hamburger-input"
@@ -49,6 +39,7 @@
                 <!-- Hamburger menu will be shown only on mobile. Clicking this will trigger the menu links to animate out -->
                 <label id="hamburger-menu" for="hamburger-input">
                     <nav id="sidebar-menu">
+                        <!-- These links will be hidden until hamburger menu is clicked -->
                         <ul>
                             <li>
                                 <a id="navArrow" href="../pages/about.html"
@@ -78,26 +69,26 @@
             </header>
             <section>
                 <h2>Who Am I?</h2>
-                <article>                  
+                <article>
                     <p>
                         I am a full stack developer, in training. The meaning of
-                        those three words are at present a mystery to me, yet by the
-                        end of this course I hope to understand them by at least
-                        10%, equating to how much I understood of my philosophy
-                        degree.
+                        those three words are at present a mystery to me, yet by
+                        the end of this course I hope to understand them by at
+                        least 10%, equating to how much I understood of my
+                        philosophy degree.
                     </p>
                     <p>
                         On any given day, I wake up early and attempt to
-                        meditate, followed by a brisk walk to my local cafe
-                        for a mocha, where after several years I am still asked
-                        my name.
+                        meditate, followed by a brisk walk to my local cafe for
+                        a mocha, where after several years I am still asked my
+                        name.
                     </p>
                     <p>
                         I also enjoy buying books ill never read, calisthenics,
                         house plants and the constant battle to prevent their
-                        demise, journaling, pretending I am not subservient to the demands of my cats,
-                        learning Spanish, playing melancholy songs on guitar,
-                        and competitive gaming.
+                        demise, journaling, pretending I am not subservient to
+                        the demands of my cats, learning Spanish, playing
+                        melancholy songs on guitar, and competitive gaming.
                     </p>
                     <p>
                         If you feel like chatting about existential dread, hola

@@ -1,4 +1,4 @@
-/* when viewed on smaller screens content is pushed into collumn for desired visibility */
+/* When viewed on smaller screens content is pushed into column for desired visibility */
 @media screen and (max-width: 600px) {
     .bodyContainer {
         flex-direction: column;

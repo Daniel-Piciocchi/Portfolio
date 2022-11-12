@@ -3,8 +3,31 @@
     src: url('../fonts/FiraCode-Light.ttf');
 }
 
+/* For smaller screens some padding has been left on the edges to look
+    neat. Width is required as postion: fixed is used on the navigation container */
 @media screen and (max-width: 768px) {
-    #main-menu {
+    .navigationContainer {
+        width: 85%;
+    }
+}
+
+/* For larger screens extra padding has been created on the edges to look
+    neat. Width is required as postion: fixed is used on the navigation container */
+@media screen and (min-width: 768px) {
+    .navigationContainer {
+        width: 65%;
+    }
+    /* On wider screens there is a lot of unused space, gutters placed on sides for desirable visibility */
+    .container {
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-top: 40px;
+    }
+}
+
+/* On mobile the navigation links are hidden and replaced with hamburger menu */
+@media screen and (max-width: 450px) {
+    .menuLinks {
         display: none;
     }
     #hamburger-menu {
@@ -12,38 +35,10 @@
     }
 }
 
+/* On larger devices the hamburger menu is hidden and replaced with navigation links */
 @media screen and (min-width: 450px) {
-    #main-menu {
-        display: none;
-    }
     #hamburger-menu {
         display: none;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .menuLinks {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .navigationContainer {
-        display: flex;
-        width: 85%;
-    }
-}
-/* when screen above 768px content is flexed */
-@media screen and (min-width: 768px) {
-    .navigationContainer {
-        display: flex;
-        width: 65%;
-    }
- /* gutters placed on sides for desirable visibility */
-    .container {
-        margin-left: 15%;
-        margin-right: 15%;
-        padding-top: 40px;
     }
 }
 
@@ -55,6 +50,7 @@ body {
     background: rgb(30, 30, 40);
 }
 
+/* Main body, everything should have padding inside this to look neat */
 .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -62,7 +58,9 @@ body {
     -webkit-background-clip: text;
 }
 
+/* The main header with container navigation links and logo, this gets fixed along the top */
 .navigationContainer {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: right;
@@ -112,7 +110,7 @@ a {
 #hamburger-menu:hover {
     cursor: pointer;
 }
-/* appears to work like a button on click */
+/* Imitates a click animation on click */
 #hamburger-menu:active {
     background: rgb(30, 30, 40);
 }
@@ -136,7 +134,7 @@ h2 {
     align-items: center;
     text-decoration: underline;
 }
-/* fixed to bottom of homepage for easier accesibility */
+/* Fixed to bottom of homepage for accesibility */
 footer {
     position: fixed;
     left: 0;
@@ -153,16 +151,13 @@ footer {
     color: lightgray;
 }
 
-nav a {
-    color: #5b84b1ff;
-}
-
 p {
     background: linear-gradient(to right, #fc766aff 0%, #5b84b1ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+/* This creates an opacity over the entire screen when the menu links are shown on mobile */
 .overlay {
     position: fixed;
     top: 0;
@@ -181,10 +176,12 @@ p {
     text-decoration: underline;
 }
 
+/* Hamburger menu is usually not displayed, only appears on mobile */
 #hamburger-input {
     display: none;
 }
 
+/* Hamburger menu which is only shown on mobile */
 #hamburger-menu {
     width: 25px;
     height: 25px;
@@ -206,6 +203,7 @@ p {
     );
 }
 
+/* This menu pops out after clicking the hamburger menu, its styled with postion: fixed and right:-250 which mvoes it off screen until the click */
 #hamburger-menu #sidebar-menu {
     opacity: 100%;
     visibility: hidden;
@@ -226,11 +224,11 @@ p {
 
 #hamburger-menu li {
     list-style-type: none;
-    line-height: 1.8rem;
+    line-height: 28px;
 }
 
 #hamburger-menu a {
-    font-size: 1.4rem;
+    font-size: 22px;
     text-decoration: none;
 }
 
@@ -238,13 +236,13 @@ p {
     text-decoration: underline;
 }
 
+/* Once input is clicked, this will show the side menu and transition it into the correct position */
 #hamburger-input:checked + #hamburger-menu #sidebar-menu {
     visibility: visible;
     right: 0;
 }
+/* Creates an overlay for the screen when side menu is visible */
 #hamburger-input:checked ~ .overlay {
     visibility: visible;
     opacity: 0.7;
 }
-
-
