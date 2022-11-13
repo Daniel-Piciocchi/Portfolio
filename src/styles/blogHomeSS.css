@@ -1,11 +1,35 @@
+@media screen and (min-width: 768px) {
+    #gridContainer {
+        grid-template-columns: repeat(auto-fit, 450px);
+    }
+
+    .blogIMG {
+        width: 300px;
+        height: 300px;
+        border-radius: 200px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #gridContainer {
+        grid-template-columns: repeat(auto-fit, 250px);
+    }
+    .blogIMG {
+        border-radius: 120px;
+    }
+}
+
+#gridContainer {
+    display: grid;
+    justify-content: center;
+}
+
 h4 {
     text-align: center;
     display: inline-block;
     margin: 20px;
     cursor: pointer;
-    font-size: 28px;
 }
-
 
 .blog {
     text-decoration: overline;
@@ -14,25 +38,17 @@ h4 {
 
 .blogIMG {
     padding: 20px;
-    border-radius: 120px;
-    
-}
-#blog {
-    text-decoration: underline;
 }
 
-/* Displayed grid to fit blogs evenly */
-#gridContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 250px);
-    justify-content: center;
+#blog {
+    text-decoration: underline;
 }
 
 /* User hovers over grid item, increase size by 120% */
 .gridItem:hover {
     transform: scale(1.2);
     text-decoration: underline;
-    color:lightgray;
+    color: lightgray;
     transition: transform 0.2s;
 }
 
@@ -42,4 +58,3 @@ h4 {
     justify-content: center;
     align-items: center;
 }
-

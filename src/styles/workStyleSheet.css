@@ -4,6 +4,10 @@
         display: flex;
         flex-direction: column;
     }
+
+    h1 {
+        font-size: 22px;
+    }
 }
 
 /* Hides content to only be shown on hover on larger devices */
@@ -11,12 +15,15 @@
     .dropdown-content {
         display: none;
     }
+
+    h1 {
+        font-size: 42px;
+    }
 }
 
 h1 {
     text-align: center;
     font-family: 'Fire Code-Light';
-    font-size: 22px;
 }
 
 #sectionContainer {

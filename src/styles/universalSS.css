@@ -5,9 +5,13 @@
 
 /* For smaller screens some padding has been left on the edges to look
     neat. Width is required as postion: fixed is used on the navigation container */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .navigationContainer {
         width: 85%;
+    }
+
+    a {
+        font-size: 18px;
     }
 }
 
@@ -16,7 +20,7 @@
 @media screen and (min-width: 768px) {
     .navigationContainer {
         width: 65%;
-        padding-top: 40px
+        padding-top: 40px;
     }
     /* On wider screens there is a lot of unused space, gutters placed on sides for desirable visibility */
     .container {
@@ -24,10 +28,26 @@
         margin-right: 15%;
         padding-top: 40px;
     }
+
+    a {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 52px;
+    }
+
+    h2 {
+        font-size: 82px;
+    }
+
+    h4 {
+        font-size: 42px;
+    }
 }
 
 /* On mobile the navigation links are hidden and replaced with hamburger menu */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 451px) {
     .menuLinks {
         display: none;
     }
@@ -84,7 +104,6 @@ p {
 a {
     font-family: 'Fire Code-Light';
     color: #5b84b1ff;
-    font-size: 18px;
     transition: transform 0.2s;
     display: inline-block;
     margin-left: 4px;
